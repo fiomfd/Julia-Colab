@@ -4,4 +4,4 @@ This repository provides
 - Python &amp; Jupyter notebook file
 - Julia &amp; Pluto file
 
-for a hand-on workshop entitled "Julia and Python on Goole Colab"
+for a hand-on workshop entitled "Julia and Python on Goole Colab".
