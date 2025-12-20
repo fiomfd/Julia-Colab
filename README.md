@@ -4,6 +4,6 @@ This repository provides
 - Python &amp; Jupyter notebook file: hands-on_python.ipynb
 - Julia &amp; Pluto file: hands-on_pluto.jp
 
-for a hand-on workshop entitled "Julia and Python on Goole Colab".
+for a hand-on workshop entitled "Julia and Python on Google Colab".
 
 [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fiomfd/hands-on/)
