@@ -1,4 +1,4 @@
-# Julia and Python on Google Colab
+## Julia and Python on Google Colab
 This repository provides some interactive notebooks for a hands-on workshop entitled "Julia and Python on Google Colab" biven by [Hiroyuki Chihara](https://fiomfd.github.io/).
 
 - Julia &amp; Jupyter Notebook file: hands-on_julia.ipynb
