@@ -12,5 +12,5 @@ This repository provides some interactive notebooks for a hands-on workshop enti
 for a hands-on workshop entitled "Julia and Python on Google Colab". 
 
 
-Julia &amp; Jupyter Notebook and Python &amp; Jupyter Notebook can be used via 
+Julia &amp; Jupyter Notebook and Python &amp; Jupyter Notebook can be used on  
 [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fiomfd/hands-on/).
