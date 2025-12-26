@@ -4,11 +4,13 @@ This repository provides some interactive notebooks for a hands-on workshop enti
 - Julia &amp; Jupyter Notebook: hands-on_julia.ipynb
   
   html version ([before](https://fiomfd.github.io/hands-on/hands-on_julia_before.html), [after](https://fiomfd.github.io/hands-on/hands-on_julia_after.html))
-- Python &amp; Jupyter notebook: hands-on_python.ipynb
+- Python &amp; Jupyter Notebook: hands-on_python.ipynb
     
   html version ([before](https://fiomfd.github.io/hands-on/hands-on_python_before.html), [after](https://fiomfd.github.io/hands-on/hands-on_python_after.html))
 - Julia &amp; Pluto: hands-on_pluto.jl
 
-for a hands-on workshop entitled "Julia and Python on Google Colab".
+for a hands-on workshop entitled "Julia and Python on Google Colab". 
 
-[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fiomfd/hands-on/)
+
+Julia &amp; Jupyter Notebook and Python &amp; Jupyter Notebook can be used via 
+[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fiomfd/hands-on/).
