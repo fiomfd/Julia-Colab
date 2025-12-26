@@ -9,6 +9,6 @@ This repository provides some interactive notebooks for a hands-on workshop enti
   html version ([before](https://fiomfd.github.io/hands-on/hands-on_python_before.html), [after](https://fiomfd.github.io/hands-on/hands-on_python_after.html))
 - Julia &amp; Pluto: hands-on_pluto.jp
 
-for a hand-on workshop entitled "Julia and Python on Google Colab".
+for a hands-on workshop entitled "Julia and Python on Google Colab".
 
 [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fiomfd/hands-on/)
