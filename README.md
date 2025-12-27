@@ -7,9 +7,8 @@ This repository provides basic infomation of a hands-on workshop entitled "Julia
 - Python &amp; Jupyter Notebook: hands-on_python.ipynb
     
   html version ([unused](https://fiomfd.github.io/hands-on/hands-on_python_before.html), [used](https://fiomfd.github.io/hands-on/hands-on_python_after.html))
-- Julia &amp; Pluto: hands-on_pluto.jl
-
-  ([html version](https://fiomfd.github.io/hands-on/hands-on_pluto.html)
+- Julia &amp; Pluto: hands-on_pluto.jl 
+  [html version](https://fiomfd.github.io/hands-on/hands-on_pluto.html)
 
 
 Julia &amp; Jupyter Notebook and Python &amp; Jupyter Notebook can also be used on 
