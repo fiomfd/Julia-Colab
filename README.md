@@ -3,10 +3,10 @@ This repository provides basic infomation of a hands-on workshop entitled "Julia
 
 - Julia &amp; Jupyter Notebook: hands-on_julia.ipynb
   
-  html version ([before](https://fiomfd.github.io/hands-on/hands-on_julia_before.html), [after](https://fiomfd.github.io/hands-on/hands-on_julia_after.html))
+  html version ([unused](https://fiomfd.github.io/hands-on/hands-on_julia_before.html), [used](https://fiomfd.github.io/hands-on/hands-on_julia_after.html))
 - Python &amp; Jupyter Notebook: hands-on_python.ipynb
     
-  html version ([before](https://fiomfd.github.io/hands-on/hands-on_python_before.html), [after](https://fiomfd.github.io/hands-on/hands-on_python_after.html))
+  html version ([unused](https://fiomfd.github.io/hands-on/hands-on_python_before.html), [used](https://fiomfd.github.io/hands-on/hands-on_python_after.html))
 - Julia &amp; Pluto: hands-on_pluto.jl
 
 
