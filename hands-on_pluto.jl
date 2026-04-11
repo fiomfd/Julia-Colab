@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.21
+# v0.20.24
 
 using Markdown
 using InteractiveUtils
@@ -641,7 +641,7 @@ In what follows Julia downloads open data, and visualizes information taking ave
 - the daily maximum tenperature
 - the daily minimum tenpereture
 - the daily mean tenperature 
-of 1884-present at the Hong Kong Observatory. The starting dates of  the theree data are not same, and so we make use of data of 140 years of 1885-2024. The Hong Kong Observatory dataset has no daily temperature records from 1 Jan 1940 to 31 Dec 1946, due to the disruption of WWII and the Japanese occupation. This 7-year gap means that analyses requiring continuous daily data over multiple years will be affected if these years are included. To ensure consistency, we restrict the analysis period to 1 Jan 1947 – 31 Dec 2024.
+of 1884-present at the Hong Kong Observatory. The starting dates of  the theree data are not same, and so we make use of data of 140 years of 1885-2024. The Hong Kong Observatory dataset has no daily temperature records from 1 Jan 1940 to 31 Dec 1946, due to the disruption of WWII and the Japanese occupation. This 7-year gap means that analyses requiring continuous daily data over multiple years will be affected if these years are included. To ensure consistency, we restrict the analysis period to 1 Jan 1947 – 31 Dec 2025.
 """
 
 # ╔═╡ 5275c90c-5604-4a79-b1e7-ecbfdba87eaa
@@ -658,7 +658,7 @@ begin
 				 drop=["C"],
 				 missingstring="***",
 				 normalizenames=true); 
-	delete!(Amax, 48579:nrow(Amax));
+	delete!(Amax, 48944:nrow(Amax));
 	Amean = CSV.read("HK_Mean_Temperature.csv", DataFrame, 
 				 header=["Year", "Month", "Day", "Average", "C"],
 				 skipto=310,
@@ -667,7 +667,7 @@ begin
 				 drop=["C"],
 				 missingstring="***",
 				 normalizenames=true); 
-	delete!(Amean, 48579:nrow(Amean));
+	delete!(Amean, 48944:nrow(Amean));
 	Amin = CSV.read("HK_Minimum_Temperature.csv", DataFrame, 
 				 header=["Year", "Month", "Day", "Minimum", "C"],
 				 skipto=370,
@@ -676,7 +676,7 @@ begin
 				 drop=["C"],
 				 missingstring="***",
 				 normalizenames=true); 
-	delete!(Amin, 48579:nrow(Amin));
+	delete!(Amin, 48944:nrow(Amin));
 
     Adata = outerjoin(Amax, Amean, Amin, 
 				 on = [:Year, :Month, :Day]);
@@ -689,8 +689,8 @@ Julia computes the annual maximum, average, and minmum temperatures, and shows t
 
 # ╔═╡ 3fd524e2-693f-4b84-9d39-573fa6f6f399
 begin
-	A_1947_2024 = filter(:Year => y -> 1947 <= y <= 2024, Adata);
-	Ydata = combine(groupby(A_1947_2024, :Year),
+	A_1947_2025 = filter(:Year => y -> 1947 <= y <= 2025, Adata);
+	Ydata = combine(groupby(A_1947_2025, :Year),
     :Maximum => maximum => :Ymax,
     :Average => mean     => :Yavg,
     :Minimum => minimum  => :Ymin
@@ -714,12 +714,12 @@ end
 md"""
 Moreover, Julia computes the monthy maximum, average, and minmum temperatures, and shows the line graphs in each year. Choose the year using the slider. 
 
-year = $(@bind yy Slider(1947:1:2024, show_value=true, default=1947)) 
+year = $(@bind yy Slider(1947:1:2025, show_value=true, default=1947)) 
 """
 
 # ╔═╡ c60fe0fd-7888-4fb1-9f82-d7c1c8d3460f
 begin
-	Mdata = combine(groupby(A_1947_2024, [:Year, :Month]),
+	Mdata = combine(groupby(A_1947_2025, [:Year, :Month]),
     :Maximum => maximum => :Mmax,
     :Average => mean    => :Mavg,
     :Minimum => minimum => :Mmin
@@ -1212,7 +1212,7 @@ Wavelets = "~0.10.1"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.12.3"
+julia_version = "1.12.5"
 manifest_format = "2.0"
 project_hash = "1995b10e5df5acf957408a81c8970c7d44c8a42f"
 
@@ -2462,7 +2462,7 @@ version = "0.3.7"
 
 [[deps.MozillaCACerts_jll]]
 uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
-version = "2025.5.20"
+version = "2025.11.4"
 
 [[deps.MultivariatePolynomials]]
 deps = ["DataStructures", "LinearAlgebra", "MutableArithmetics"]
